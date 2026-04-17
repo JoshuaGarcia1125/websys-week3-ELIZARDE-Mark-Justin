@@ -1,3 +1,4 @@
+
 html,
 body {
   height: 100%;
@@ -276,3 +277,272 @@ a {
 .image-card:hover img {
   transform: scale(1.05);
 }
+
+body {
+  font-family: "Fredoka", sans-serif;
+  margin: 0;
+  background-color: #0f172a;
+  color: white;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  padding: 18px;
+  background: linear-gradient(to right, #111827, #1f2937);
+}
+
+nav {
+  text-align: center;
+  background-color: #1e293b;
+  padding: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+nav a.active {
+  color: #38bdf8;
+  pointer-events: none;
+  cursor: default;
+  font-weight: bold;
+}
+
+nav a.active {
+  border-bottom: 2px solid #38bdf8;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  width: 95%;
+  max-width: 1400px;
+  margin: 20px auto;
+  margin-top: 40px;
+}
+
+.card {
+  background-color: #1e293b;
+  padding: 15px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+.contact {
+  width: 55%;
+  margin: 15px auto;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #38bdf8;
+}
+
+a {
+  color: #22c55e;
+  transition: 0.2s;
+}
+
+a:hover {
+  color: #4ade80;
+}
+
+img {
+  width: 150px;
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #111827;
+  margin-top: auto;
+}
+
+.hobbies-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 60px;
+  list-style-position: inside;
+}
+
+.websites-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 60px;
+  list-style-position: inside;
+}
+
+.websites-list li {
+  margin-bottom: 12px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 25px;
+  text-align: center;
+}
+
+.contact-grid p {
+  background-color: #0f172a;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.contact-grid p:last-child {
+  grid-column: span 2;
+}
+
+.contact-grid strong {
+  display: block;
+  color: #38bdf8;
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-size: 56px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 1px;
+  margin-top: 0;
+}
+
+p,
+li,
+a {
+  font-size: 22px;
+}
+
+.about-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  margin-top: 0;
+  color: #38bdf8;
+  font-size: 34px;
+}
+
+.about-text p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.about-text h3 {
+  margin-top: 20px;
+  color: #38bdf8;
+}
+
+.about-text ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.about-text li {
+  margin-bottom: 8px;
+}
+
+.about-image img {
+  width: 320px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.about-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.about-card {
+  background-color: #1e293b;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.about-card p {
+  margin-bottom: 10px; 
+}
+
+.about-card ul {
+  margin-bottom: 10px;
+}
+
+.about-card li {
+  margin-bottom: 5px;
+}
+
+.image-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.image-card img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+.image-card img {
+  transition: transform 0.4s ease;
+}
+
+.image-card:hover img {
+  transform: scale(1.05);
+}
+
